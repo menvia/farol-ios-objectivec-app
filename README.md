@@ -3,4 +3,4 @@ Projeto de exemplo de código aberto, com objetivo de instruir desenvolvedores n
 
 Versão: 1.0
 
-Para ver obter mais informações pode acompanhar  nossos tutorias e artigos, acessando http://developer.menvia.com/
+Para obter mais informações pode acompanhar  nossos tutorias e artigos, acessando http://developer.menvia.com/
