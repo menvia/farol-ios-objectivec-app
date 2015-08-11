@@ -1,0 +1,10 @@
+PODS:
+  - DZNEmptyDataSet (1.7)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 896f8efb3b0961c5ccb59d4959ccf9280854aa3d
+
+COCOAPODS: 0.37.2

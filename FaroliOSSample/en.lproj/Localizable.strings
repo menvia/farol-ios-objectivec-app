@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+"PROXIMITY" = "Proximity";
+"ACCURACY" = "Accuracy";
+"ADD_BEACON" = "Add Beacon";
+"SAVE" = "Save";
+"CANCEL" = "Cancel";
+"NAME" = "Name";
+"DETAILS" = "Details";
+"LOCATION_SERVICES_DISABLED" = "Location Services disabled";
+"REGION_NOT_AVAILABLE" = "Region to be monitored not available";
+"BEACONS_FEATURE_NOT_AVAILABLE" = "Beacons feature is not available for this device!";
+"NOT_AUTHORIZED_LOCATION_SERVICES" = "You did not authorize the location service for its App";
+"ERROR_LOCATION_SERVICES" = "Error - Location Manager Services";
+"FAIL_MONITORING_REGION" = "Failure monitoring region: %@";
+"LOCATION_FAILED" = "Location failed: %@";
+"BLUETOOTH_CONNECTION_LOST" = "Bluetooth connection lost!";
+"BLE_NOT_SUPPORTED" = "Bluetooth Low Energy not supported!";
+"APP_NOT_AUTHORIZED_BLE" = "This App is not allowed to use Bluetooth Low Energy. Allow the use of Bluetooth Low Energy through the Settings option.";
+"BLUETOOTH_NOT_ACTIVE" = "Bluetooth is not active!";
+"BLUETOOTH_ACTIVE_AVAILABLE" = "Bluetooth active and available for use!";
+"BLUETOOTH_START_UNKNOWN" = "Bluetooth status unknown!";
+"CLOSE" = "Fechar";
+"UNKNOWN" = "Unknown";
+"IMMEDIATE" = "Immediate";
+"NEAR" = "Near";
+"FAR" = "Far";
+"ABOUT" = "About";
+"MENVIA_INFO" = "For more information on how to improve your business using context aware applications, contact us on contato@menvia.com or http://www.menvia.com/";
+"NO_BEACONS_ADDED" = "No beacons added";
+"EMPTY_BEACONS" = "As long as you add a beacon, it will appear here!";
+

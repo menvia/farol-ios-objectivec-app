@@ -15,5 +15,7 @@ typedef void(^MVBeaconAddedCompletion)(MVBeacon *newBeacon);
 @interface MVAddBeaconViewController : UITableViewController
 
 @property (nonatomic, copy) MVBeaconAddedCompletion beaconAddedCompletion;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 
 @end

@@ -11,7 +11,6 @@
 
 @interface MVAddBeaconViewController ()
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveBarButtonItem;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *uuidTextField;
 @property (weak, nonatomic) IBOutlet UITextField *majorIdTextField;
@@ -26,8 +25,21 @@
 @implementation MVAddBeaconViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    self.saveBarButtonItem.enabled = NO;
+    
+    self.title = NSLocalizedString(@"ADD_BEACON", nil);
+    self.saveButton.title = NSLocalizedString(@"SAVE", nil);
+    self.cancelButton.title = NSLocalizedString(@"CANCEL", nil);
+    self.UUIDFieldValid = YES;
+    self.saveButton.enabled = NO;
+    
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.tableHeaderView.layer.borderWidth = 0;
+    
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    gestureRecognizer.cancelsTouchesInView = NO;
+    [self.navigationController.view addGestureRecognizer:gestureRecognizer];
     
     [self.nameTextField addTarget:self action:@selector(nameTextFieldChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.uuidTextField addTarget:self action:@selector(uuidTextFieldChanged:) forControlEvents:UIControlEventEditingChanged];
@@ -45,7 +57,7 @@
         self.nameFieldValid = NO;
     }
     
-    self.saveBarButtonItem.enabled = self.isNameFieldValid && self.isUUIDFieldValid;
+    self.saveButton.enabled = self.isNameFieldValid && self.isUUIDFieldValid;
 }
 
 - (void)uuidTextFieldChanged:(UITextField *)textField {
@@ -58,7 +70,7 @@
         self.UUIDFieldValid = NO;
     }
     
-    self.saveBarButtonItem.enabled = self.isNameFieldValid && self.isUUIDFieldValid;
+    self.saveButton.enabled = self.isNameFieldValid && self.isUUIDFieldValid;
 }
 
 - (IBAction)cancel:(id)sender {
@@ -67,7 +79,7 @@
 
 - (IBAction)save:(id)sender {
     if (self.beaconAddedCompletion) {
-        NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:self.uuidTextField.text];
+        NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:[self.uuidTextField.text uppercaseString]];
         MVBeacon *newBeacon = [[MVBeacon alloc] initWithName:self.nameTextField.text
                                                     uuid:uuid
                                                    major:[self.majorIdTextField.text intValue]
@@ -76,6 +88,11 @@
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)hideKeyboard {
+    
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 @end

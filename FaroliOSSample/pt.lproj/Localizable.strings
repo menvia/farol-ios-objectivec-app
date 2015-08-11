@@ -1,0 +1,31 @@
+/* Localized versions of Info.plist keys */
+"PROXIMITY" = "Proximidade";
+"ACCURACY" = "Exatidão";
+"ADD_BEACON" = "Adicionar Beacon";
+"SAVE" = "Salvar";
+"CANCEL" = "Cancelar";
+"NAME" = "Nome";
+"DETAILS" = "Detalhes";
+"LOCATION_SERVICES_DISABLED" = "Location Services desabilitado";
+"REGION_NOT_AVAILABLE" = "Região a ser monitorada não disponível";
+"BEACONS_FEATURE_NOT_AVAILABLE" = "A funcionalidade Beacons não está disponível para este dispositivo!";
+"NOT_AUTHORIZED_LOCATION_SERVICES" = "Você não autorizou o serviço de localização para sua App";
+"ERROR_LOCATION_SERVICES" = "Erro - Location Manager Services";
+"FAIL_MONITORING_REGION" = "Falha na região de monitoramento: %@";
+"LOCATION_FAILED" = "Localização falhou: %@";
+"BLUETOOTH_CONNECTION_LOST" = "Conexão com Bluetooth perdida!";
+"BLE_NOT_SUPPORTED" = "Bluetooth Low Energy não suportado!";
+"APP_NOT_AUTHORIZED_BLE" = "Essa App não está autorizada a utilizar Bluetooth Low Energy. Permita o uso de Bluetooth Low Energy através da opção Settings.";
+"BLUETOOTH_NOT_ACTIVE" = "Bluetooth não está ativo!";
+"BLUETOOTH_ACTIVE_AVAILABLE" = "Bluetooth ativo e disponível para uso!";
+"BLUETOOTH_START_UNKNOWN" = "Estado do Bluetooth desconhecido!";
+"CLOSE" = "Fechar";
+"UNKNOWN" = "Desconhecido";
+"IMMEDIATE" = "Imediata";
+"NEAR" = "Próximo";
+"FAR" = "Longe";
+"ABOUT" = "Sobre";
+"MENVIA_INFO" = "Para mais informações sobre como melhorar o seu negócio e adicionar valor para o seu cliente utilizando soluções sensíveis ao contexto, contate-nos pelo email contato@menvia.com ou pelo site http://www.menvia.com/";
+"NO_BEACONS_ADDED" = "Nenhum beacon adicionado";
+"EMPTY_BEACONS" = "Assim que um beacon for adicionado, este será exibido aqui!";
+

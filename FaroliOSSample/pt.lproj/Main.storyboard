@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oWT-sn-OyC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand Book.otf">
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+            <string>QuicksandBook-Regular</string>
+        </mutableArray>
+        <mutableArray key="Quicksand Light.otf">
+            <string>QuicksandLight-Regular</string>
+            <string>QuicksandLight-Regular</string>
+            <string>QuicksandLight-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--About-->
+        <scene sceneID="7Qs-OP-37i">
+            <objects>
+                <viewController id="eaj-GB-PP1" customClass="MVAboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xUp-mX-k1k"/>
+                        <viewControllerLayoutGuide type="bottom" id="bmo-oo-XPC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7tx-1b-tTU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_menvia" translatesAutoresizingMaskIntoConstraints="NO" id="Okd-VQ-8dE">
+                                <rect key="frame" x="102" y="141" width="117" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="MG0-QC-jC5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beacon Farol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb4-fU-hbe">
+                                <rect key="frame" x="60" y="246" width="200" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Q80-bm-8ws"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-Jb-Jgq">
+                                <rect key="frame" x="16" y="353" width="288" height="215"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="PiZ-5t-2pI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Para mais informações sobre como melhorar o seu negócio e adicionar valor para o seu cliente utilizando soluções sensíveis ao contexto, contate-nos pelo email contato@menvia.com ou pelo site http://www.menvia.com</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="QuicksandLight-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v 0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr4-Cb-6o2">
+                                <rect key="frame" x="110" y="273" width="100" height="21"/>
+                                <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vfy-Jb-Jgq" firstAttribute="leading" secondItem="7tx-1b-tTU" secondAttribute="leadingMargin" id="2NQ-mD-Vex"/>
+                            <constraint firstItem="Okd-VQ-8dE" firstAttribute="top" secondItem="xUp-mX-k1k" secondAttribute="bottom" constant="77" id="3Nm-qr-kN4"/>
+                            <constraint firstItem="rr4-Cb-6o2" firstAttribute="top" secondItem="Gb4-fU-hbe" secondAttribute="bottom" constant="3" id="7Zx-or-PNp"/>
+                            <constraint firstItem="Okd-VQ-8dE" firstAttribute="centerX" secondItem="Gb4-fU-hbe" secondAttribute="centerX" id="CFR-WT-hdn"/>
+                            <constraint firstItem="Vfy-Jb-Jgq" firstAttribute="centerX" secondItem="rr4-Cb-6o2" secondAttribute="centerX" id="CRP-MM-I76"/>
+                            <constraint firstItem="bmo-oo-XPC" firstAttribute="top" secondItem="Vfy-Jb-Jgq" secondAttribute="bottom" id="I4i-zt-3MM"/>
+                            <constraint firstItem="rr4-Cb-6o2" firstAttribute="leading" secondItem="7tx-1b-tTU" secondAttribute="leadingMargin" constant="94" id="LS4-CV-42Y"/>
+                            <constraint firstItem="Vfy-Jb-Jgq" firstAttribute="top" secondItem="rr4-Cb-6o2" secondAttribute="bottom" constant="59" id="eCf-qa-oN7"/>
+                            <constraint firstItem="Okd-VQ-8dE" firstAttribute="leading" secondItem="7tx-1b-tTU" secondAttribute="leadingMargin" constant="86" id="eSe-NS-ar5"/>
+                            <constraint firstItem="Vfy-Jb-Jgq" firstAttribute="trailing" secondItem="7tx-1b-tTU" secondAttribute="trailingMargin" id="fTu-Ei-xQP"/>
+                            <constraint firstItem="Gb4-fU-hbe" firstAttribute="top" secondItem="Okd-VQ-8dE" secondAttribute="bottom" constant="12" id="hVs-pw-hal"/>
+                            <constraint firstItem="Gb4-fU-hbe" firstAttribute="leading" secondItem="7tx-1b-tTU" secondAttribute="leadingMargin" constant="44" id="mbM-R4-KJs"/>
+                            <constraint firstItem="Gb4-fU-hbe" firstAttribute="centerX" secondItem="rr4-Cb-6o2" secondAttribute="centerX" id="n6E-mM-GeR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="zPB-Oc-yfe">
+                        <barButtonItem key="rightBarButtonItem" image="Close" id="XuZ-MT-GCr">
+                            <connections>
+                                <action selector="close:" destination="eaj-GB-PP1" id="3SO-VD-3E2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appnameLabel" destination="Gb4-fU-hbe" id="7D9-nL-Gso"/>
+                        <outlet property="informationTextView" destination="Vfy-Jb-Jgq" id="dne-KS-7x4"/>
+                        <outlet property="versionLabel" destination="rr4-Cb-6o2" id="txX-Vg-4Wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V25-WV-yRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="-561"/>
+        </scene>
+        <!--Beacons-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MVBeaconsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vnl-Xa-LOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="jiY-Nq-f07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aMZ-Mx-4IH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Item" rowHeight="130" id="ppg-wY-hL2" customClass="MVBeaconCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ppg-wY-hL2" id="kLa-91-jgZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="Proximidade: Desconhecida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hf-Xq-yqa">
+                                                    <rect key="frame" x="16" y="47" width="288" height="22"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandLight-Regular" family="Quicksand" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="Exatidão: -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plF-OY-j7i">
+                                                    <rect key="frame" x="16" y="73" width="288" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="1sG-Gb-NSg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuicksandLight-Regular" family="Quicksand" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="RSSI: -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufe-Sb-ffl">
+                                                    <rect key="frame" x="16" y="99" width="288" height="22"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandLight-Regular" family="Quicksand" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" misplaced="YES" text="Farol 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6h-u3-aFh">
+                                                    <rect key="frame" x="16" y="8" width="288" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="aWM-hQ-Ug3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="trailing" secondItem="plF-OY-j7i" secondAttribute="trailing" id="HB0-iT-dF1"/>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="top" secondItem="plF-OY-j7i" secondAttribute="bottom" constant="4" id="W9q-nf-0jY"/>
+                                                <constraint firstItem="1Hf-Xq-yqa" firstAttribute="trailing" secondItem="J6h-u3-aFh" secondAttribute="trailing" id="aGF-FE-1DN"/>
+                                                <constraint firstItem="plF-OY-j7i" firstAttribute="trailing" secondItem="1Hf-Xq-yqa" secondAttribute="trailing" id="dds-d5-HMK"/>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="bottom" secondItem="kLa-91-jgZ" secondAttribute="bottomMargin" id="eRp-Dt-I9H"/>
+                                                <constraint firstItem="plF-OY-j7i" firstAttribute="leading" secondItem="1Hf-Xq-yqa" secondAttribute="leading" id="if7-0r-OLZ"/>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="centerX" secondItem="kLa-91-jgZ" secondAttribute="centerX" id="iu2-Cg-grg"/>
+                                                <constraint firstItem="1Hf-Xq-yqa" firstAttribute="top" secondItem="kLa-91-jgZ" secondAttribute="topMargin" constant="39" id="jBS-GS-ZKd"/>
+                                                <constraint firstItem="1Hf-Xq-yqa" firstAttribute="leading" secondItem="J6h-u3-aFh" secondAttribute="leading" id="mdn-6G-ceu"/>
+                                                <constraint firstItem="plF-OY-j7i" firstAttribute="top" secondItem="1Hf-Xq-yqa" secondAttribute="bottom" constant="4" id="nm2-p7-iIi"/>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="leading" secondItem="plF-OY-j7i" secondAttribute="leading" id="oQb-mf-hxH"/>
+                                                <constraint firstItem="J6h-u3-aFh" firstAttribute="top" secondItem="kLa-91-jgZ" secondAttribute="topMargin" id="qLG-Df-Eye"/>
+                                                <constraint firstAttribute="bottom" secondItem="plF-OY-j7i" secondAttribute="bottom" constant="34" id="qck-s1-xb2"/>
+                                                <constraint firstItem="ufe-Sb-ffl" firstAttribute="leading" secondItem="kLa-91-jgZ" secondAttribute="leadingMargin" constant="1" id="uZe-PS-mFu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accuracyLabel" destination="plF-OY-j7i" id="0CX-ae-sXp"/>
+                                            <outlet property="nameLabel" destination="J6h-u3-aFh" id="Hjj-pp-tfi"/>
+                                            <outlet property="proximityLabel" destination="1Hf-Xq-yqa" id="fhA-4I-6FW"/>
+                                            <outlet property="rssiLabel" destination="ufe-Sb-ffl" id="Q8V-9W-MtR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="IqK-Wh-aZA"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="RFM-a0-uZg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jiY-Nq-f07" firstAttribute="top" secondItem="aMZ-Mx-4IH" secondAttribute="bottom" id="20j-Aw-MB7"/>
+                            <constraint firstItem="aMZ-Mx-4IH" firstAttribute="top" secondItem="Vnl-Xa-LOh" secondAttribute="bottom" constant="-64" id="HBz-gy-w2j"/>
+                            <constraint firstItem="aMZ-Mx-4IH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Ind-y1-tnp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aMZ-Mx-4IH" secondAttribute="trailing" constant="-16" id="yEz-7E-1vl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Beacons" id="dlF-WY-14h">
+                        <barButtonItem key="leftBarButtonItem" image="About" id="qZG-ju-sad">
+                            <connections>
+                                <segue destination="P5H-Mq-Tkq" kind="modal" id="dlh-x4-RDq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5PF-P4-oY3">
+                            <connections>
+                                <segue destination="Awj-Xb-WMP" kind="modal" identifier="Add" id="IEC-OM-Lee"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="itemsTableView" destination="aMZ-Mx-4IH" id="Awv-Q6-RRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="03a-3K-8jf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oWT-sn-OyC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOx-sQ-1Py">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="X4Q-OC-aeY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nq-92-lJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kxY-Pg-llS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Awj-Xb-WMP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VGg-yv-45D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xyd-Mo-RNz" kind="relationship" relationship="rootViewController" id="qa5-fE-4I0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9o-zD-moc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="110"/>
+        </scene>
+        <!--Adicionar Beacon-->
+        <scene sceneID="HMW-1F-V7T">
+            <objects>
+                <tableViewController id="xyd-Mo-RNz" customClass="MVAddBeaconViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tHd-rE-Puh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ad6-1f-S8m">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="VdK-fg-cFH">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VdK-fg-cFH" id="F6G-qV-QBf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3MT-Xt-Nc8">
+                                                    <rect key="frame" x="20" y="7" width="290" height="30"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="uyp-6h-hlK">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uyp-6h-hlK" id="6Pk-1M-xD2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="64657665-6c6f-7064-6279-6d656e766961" placeholder="UUID" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dEl-dr-VqO">
+                                                    <rect key="frame" x="20" y="7" width="290" height="30"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MMV-NR-1fu">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MMV-NR-1fu" id="qzP-zB-eHr">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Major" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-E5-336">
+                                                    <rect key="frame" x="20" y="7" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Minor" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-ed-Rx3">
+                                                    <rect key="frame" x="203" y="7" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" name="QuicksandBook-Regular" family="Quicksand" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="xyd-Mo-RNz" id="Ha7-yf-dMF"/>
+                            <outlet property="delegate" destination="xyd-Mo-RNz" id="ptW-bE-AWo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Adicionar Beacon" id="0WP-Jv-Ua6">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="jqD-EO-AWP">
+                            <connections>
+                                <action selector="cancel:" destination="xyd-Mo-RNz" id="Qna-4J-FfX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="q6u-Ry-tvD">
+                            <connections>
+                                <action selector="save:" destination="xyd-Mo-RNz" id="hzf-Yj-vmS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="jqD-EO-AWP" id="fk4-ap-c8T"/>
+                        <outlet property="majorIdTextField" destination="pSr-E5-336" id="pVa-wC-1La"/>
+                        <outlet property="minorIdTextField" destination="rMq-ed-Rx3" id="mqq-2w-bTG"/>
+                        <outlet property="nameTextField" destination="3MT-Xt-Nc8" id="CB5-qv-PdH"/>
+                        <outlet property="saveButton" destination="q6u-Ry-tvD" id="f0z-Lu-zS0"/>
+                        <outlet property="uuidTextField" destination="dEl-dr-VqO" id="Ogr-wn-Qve"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axb-bP-CcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9pu-56-KOV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P5H-Mq-Tkq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x97-aM-9G9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eaj-GB-PP1" kind="relationship" relationship="rootViewController" id="ixN-eV-GXx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKb-ft-58i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-561"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="About" width="24" height="24"/>
+        <image name="Close" width="24" height="24"/>
+        <image name="logo_menvia" width="192" height="152"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

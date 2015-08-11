@@ -10,66 +10,31 @@
 #import "MVAddBeaconViewController.h"
 #import "MVBeacon.h"
 #import "MVBeaconCell.h"
-
-@import CoreLocation;
+#import "MVLocationManager.h"
+#import "UIScrollView+EmptyDataSet.h"
 
 static NSString * const kRWTStoredItemsKey = @"storedItems";
 
-@interface MVBeaconsViewController () <UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate>
+@interface MVBeaconsViewController () <UITableViewDataSource, UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *itemsTableView;
 @property (strong, nonatomic) NSMutableArray *items;
-@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
-@implementation MVBeaconsViewController
+@implementation MVBeaconsViewController 
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
+    [self customizeDZNEmptyDataSet];
+    
+    self.itemsTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.itemsTableView.tableHeaderView.layer.borderWidth = 0;
     
     [self loadItems];
-}
-
-- (CLBeaconRegion *)beaconRegionWithItem:(MVBeacon *)item{
-    CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:item.uuid
-                                                                           major:item.majorValue
-                                                                           minor:item.minorValue
-                                                                      identifier:item.name];
-    return beaconRegion;
-}
-
-- (void)startMonitoringItem:(MVBeacon *)item{
-    CLBeaconRegion *beaconRegion = [self beaconRegionWithItem:item];
-    [self.locationManager startMonitoringForRegion:beaconRegion];
-    [self.locationManager startRangingBeaconsInRegion:beaconRegion];
-}
-
-- (void)stopMonitoringItem: (MVBeacon *)item{
-    CLBeaconRegion *beaconRegion = [self beaconRegionWithItem:item];
-    [self.locationManager stopMonitoringForRegion:beaconRegion];
-    [self.locationManager stopRangingBeaconsInRegion:beaconRegion];
-}
-
-- (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error{
-    NSLog(@"Falha na região de monitoramento: %@", error);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    NSLog(@"Localização falhou: %@",error);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region{
-    for(CLBeacon *beacon in beacons){
-        for(MVBeacon *item in self.items){
-            if([item isEqualToCLBeacon:beacon]){
-                item.lastSeenBeacon = beacon;
-            }
-        }
-    }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -84,7 +49,7 @@ static NSString * const kRWTStoredItemsKey = @"storedItems";
                                        withRowAnimation:UITableViewRowAnimationAutomatic];
             [self.itemsTableView endUpdates];
             // método invocado para disparar o monitoramento do beacon
-            [self startMonitoringItem:newItem];
+            [[MVLocationManager sharedManager] startMonitoringBeacon:newItem];
             [self persistItems];
         }];
     }
@@ -99,7 +64,7 @@ static NSString * const kRWTStoredItemsKey = @"storedItems";
             MVBeacon *item = [NSKeyedUnarchiver unarchiveObjectWithData:itemData];
             [self.items addObject:item];
             // disparando o monitoramento de beacons em memória
-            [self startMonitoringItem:item];
+            [[MVLocationManager sharedManager] startMonitoringBeacon:item];
         }
     }
 }
@@ -134,8 +99,8 @@ static NSString * const kRWTStoredItemsKey = @"storedItems";
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        MVBeacon *itemToRemove = [self.items objectAtIndex:indexPath.row]; // converte a linha da tabela no item do tipo MVItem a ser chamado pelo metodo abaixo
-        [self stopMonitoringItem:itemToRemove]; // invoca o metodo para remover o beacon do estado de monitoramento
+        MVBeacon *itemToRemove = [self.items objectAtIndex:indexPath.row];
+        [[MVLocationManager sharedManager] stopMonitoringBeacon:itemToRemove];
         [tableView beginUpdates];
         [self.items removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -144,14 +109,92 @@ static NSString * const kRWTStoredItemsKey = @"storedItems";
     }
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 130.0;
+}
+
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     MVBeacon *item = [self.items objectAtIndex:indexPath.row];
     NSString *detailMessage = [NSString stringWithFormat:@"UUID: %@\nMajor: %d\nMinor: %d", item.uuid.UUIDString, item.majorValue, item.minorValue];
-    UIAlertView *detailAlert = [[UIAlertView alloc] initWithTitle:@"Detalhes" message:detailMessage delegate:nil cancelButtonTitle:@"Fechar" otherButtonTitles:nil];
+    UIAlertView *detailAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"DETAILS", nil) message:detailMessage delegate:nil cancelButtonTitle:NSLocalizedString(@"CLOSE", nil) otherButtonTitles:nil];
     [detailAlert show];
+}
+
+#pragma mark - Custom methods
+- (void)customizeDZNEmptyDataSet
+{
+    
+    self.itemsTableView.tableFooterView = [UIView new];
+    self.itemsTableView.emptyDataSetSource = self;
+    self.itemsTableView.emptyDataSetDelegate = self;
+    self.itemsTableView.backgroundColor = [UIColor whiteColor];
+    
+}
+
+#pragma mark - DZNEmptyDataSetSource Methods
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = NSLocalizedString(@"NO_BEACONS_ADDED", nil);
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:nil];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"QuicksandBook-Regular" size:17.0f] range:NSMakeRange(0, attributedString.length)];
+    
+    return attributedString;
+}
+
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = NSLocalizedString(@"EMPTY_BEACONS", nil);
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:nil];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"QuicksandLight-Regular" size:12.0f] range:NSMakeRange(0, attributedString.length)];
+    
+    
+    return attributedString;
+}
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIImage imageNamed:@"No_Beacon"];
+}
+
+- (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIColor whiteColor];
+}
+
+- (CGPoint)offsetForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return CGPointZero;
+}
+
+#pragma mark - DZNEmptyDataSetDelegate Methods
+
+- (BOOL)emptyDataSetShouldShow:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView
+{
+    return YES;
 }
 
 @end

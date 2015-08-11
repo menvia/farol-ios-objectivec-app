@@ -7,65 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2059A3C81AA8172800734F2A /* farol-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2059A3C71AA8172800734F2A /* farol-120x120.png */; };
-		20D437C91AA7EED50056CF81 /* farol-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D437C81AA7EED50056CF81 /* farol-logo.png */; };
+		7EE7D3A18BE053832097A3B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB223622DC6005F3F2924DC9 /* libPods.a */; };
 		8391CE4E189A4D4F0072A2D3 /* MVBeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8391CE4D189A4D4F0072A2D3 /* MVBeaconCell.m */; };
 		83EC54AF1898DD3600EA1765 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54AE1898DD3600EA1765 /* Foundation.framework */; };
 		83EC54B11898DD3600EA1765 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54B01898DD3600EA1765 /* CoreGraphics.framework */; };
 		83EC54B31898DD3600EA1765 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54B21898DD3600EA1765 /* UIKit.framework */; };
-		83EC54B91898DD3600EA1765 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83EC54B71898DD3600EA1765 /* InfoPlist.strings */; };
+		83EC54B91898DD3600EA1765 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83EC54B71898DD3600EA1765 /* Localizable.strings */; };
 		83EC54BB1898DD3600EA1765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54BA1898DD3600EA1765 /* main.m */; };
 		83EC54BF1898DD3600EA1765 /* MVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54BE1898DD3600EA1765 /* MVAppDelegate.m */; };
 		83EC54C21898DD3600EA1765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EC54C01898DD3600EA1765 /* Main.storyboard */; };
 		83EC54C51898DD3600EA1765 /* MVBeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54C41898DD3600EA1765 /* MVBeaconsViewController.m */; };
 		83EC54C71898DD3600EA1765 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EC54C61898DD3600EA1765 /* Images.xcassets */; };
-		83EC54CE1898DD3600EA1765 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54CD1898DD3600EA1765 /* XCTest.framework */; };
-		83EC54CF1898DD3600EA1765 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54AE1898DD3600EA1765 /* Foundation.framework */; };
-		83EC54D01898DD3600EA1765 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EC54B21898DD3600EA1765 /* UIKit.framework */; };
-		83EC54D81898DD3600EA1765 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83EC54D61898DD3600EA1765 /* InfoPlist.strings */; };
-		83EC54DA1898DD3600EA1765 /* FaroliOSSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54D91898DD3600EA1765 /* FaroliOSSample.m */; };
 		83EC54E81898E05E00EA1765 /* MVAddBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54E71898E05E00EA1765 /* MVAddBeaconViewController.m */; };
 		83EC54EB1898E13900EA1765 /* MVBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EC54EA1898E13900EA1765 /* MVBeacon.m */; };
+		8457E6601B01796A00DD7A4B /* MVLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8457E65F1B01796A00DD7A4B /* MVLocationManager.m */; };
+		8457E6621B017A4600DD7A4B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8457E6611B017A4600DD7A4B /* CoreLocation.framework */; };
+		8457E6641B017B0800DD7A4B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8457E6631B017B0800DD7A4B /* CoreBluetooth.framework */; };
+		84B76FA31B42132400E5C279 /* MVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B76FA21B42132400E5C279 /* MVAboutViewController.m */; };
+		84E1D8131B3B9EF3002FBB0F /* Quicksand Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E1D8111B3B9EF3002FBB0F /* Quicksand Book.otf */; };
+		84E1D8141B3B9EF3002FBB0F /* Quicksand Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E1D8121B3B9EF3002FBB0F /* Quicksand Light.otf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		83EC54D11898DD3600EA1765 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83EC54A31898DD3600EA1765 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83EC54AA1898DD3600EA1765;
-			remoteInfo = ForgetMeNot;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2059A3C71AA8172800734F2A /* farol-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farol-120x120.png"; sourceTree = "<group>"; };
-		20D437C81AA7EED50056CF81 /* farol-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farol-logo.png"; sourceTree = "<group>"; };
 		8391CE4C189A4D4F0072A2D3 /* MVBeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBeaconCell.h; sourceTree = "<group>"; };
 		8391CE4D189A4D4F0072A2D3 /* MVBeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVBeaconCell.m; sourceTree = "<group>"; };
-		83EC54AB1898DD3600EA1765 /* FaroliOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaroliOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EC54AB1898DD3600EA1765 /* Farol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EC54AE1898DD3600EA1765 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83EC54B01898DD3600EA1765 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83EC54B21898DD3600EA1765 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83EC54B61898DD3600EA1765 /* FaroliOSSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaroliOSSample-Info.plist"; sourceTree = "<group>"; };
-		83EC54B81898DD3600EA1765 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83EC54BA1898DD3600EA1765 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83EC54BC1898DD3600EA1765 /* FaroliOSSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaroliOSSample-Prefix.pch"; sourceTree = "<group>"; };
 		83EC54BD1898DD3600EA1765 /* MVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVAppDelegate.h; sourceTree = "<group>"; };
 		83EC54BE1898DD3600EA1765 /* MVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVAppDelegate.m; sourceTree = "<group>"; };
-		83EC54C11898DD3600EA1765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EC54C31898DD3600EA1765 /* MVBeaconsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVBeaconsViewController.h; sourceTree = "<group>"; };
 		83EC54C41898DD3600EA1765 /* MVBeaconsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVBeaconsViewController.m; sourceTree = "<group>"; };
 		83EC54C61898DD3600EA1765 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		83EC54CC1898DD3600EA1765 /* FaroliOSSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaroliOSSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EC54CD1898DD3600EA1765 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		83EC54D51898DD3600EA1765 /* FaroliOSSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaroliOSSampleTests-Info.plist"; sourceTree = "<group>"; };
-		83EC54D71898DD3600EA1765 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83EC54D91898DD3600EA1765 /* FaroliOSSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaroliOSSample.m; sourceTree = "<group>"; };
 		83EC54E61898E05E00EA1765 /* MVAddBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAddBeaconViewController.h; sourceTree = "<group>"; };
 		83EC54E71898E05E00EA1765 /* MVAddBeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAddBeaconViewController.m; sourceTree = "<group>"; };
 		83EC54E91898E13900EA1765 /* MVBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBeacon.h; sourceTree = "<group>"; };
 		83EC54EA1898E13900EA1765 /* MVBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVBeacon.m; sourceTree = "<group>"; };
+		8419E6FA683B1604A1BB610F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8457E65E1B01796A00DD7A4B /* MVLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLocationManager.h; sourceTree = "<group>"; };
+		8457E65F1B01796A00DD7A4B /* MVLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVLocationManager.m; sourceTree = "<group>"; };
+		8457E6611B017A4600DD7A4B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8457E6631B017B0800DD7A4B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		84B76F871B40EF2D00E5C279 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84B76F881B40EF2D00E5C279 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84B76F991B40FACE00E5C279 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84B76F9E1B40FC9C00E5C279 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84B76F9F1B40FCB300E5C279 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84B76FA11B42132300E5C279 /* MVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAboutViewController.h; sourceTree = "<group>"; };
+		84B76FA21B42132400E5C279 /* MVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAboutViewController.m; sourceTree = "<group>"; };
+		84E1D8111B3B9EF3002FBB0F /* Quicksand Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Book.otf"; sourceTree = "<group>"; };
+		84E1D8121B3B9EF3002FBB0F /* Quicksand Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Light.otf"; sourceTree = "<group>"; };
+		ECF0FCC617CA4678267B3E61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB223622DC6005F3F2924DC9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,19 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8457E6641B017B0800DD7A4B /* CoreBluetooth.framework in Frameworks */,
+				8457E6621B017A4600DD7A4B /* CoreLocation.framework in Frameworks */,
 				83EC54B11898DD3600EA1765 /* CoreGraphics.framework in Frameworks */,
 				83EC54B31898DD3600EA1765 /* UIKit.framework in Frameworks */,
 				83EC54AF1898DD3600EA1765 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83EC54C91898DD3600EA1765 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83EC54CE1898DD3600EA1765 /* XCTest.framework in Frameworks */,
-				83EC54D01898DD3600EA1765 /* UIKit.framework in Frameworks */,
-				83EC54CF1898DD3600EA1765 /* Foundation.framework in Frameworks */,
+				7EE7D3A18BE053832097A3B7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,14 +92,14 @@
 				83EC54D31898DD3600EA1765 /* FaroliOSSampleTests */,
 				83EC54AD1898DD3600EA1765 /* Frameworks */,
 				83EC54AC1898DD3600EA1765 /* Products */,
+				CF453E6B73F5D4B2BB1496F0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		83EC54AC1898DD3600EA1765 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83EC54AB1898DD3600EA1765 /* FaroliOSSample.app */,
-				83EC54CC1898DD3600EA1765 /* FaroliOSSampleTests.xctest */,
+				83EC54AB1898DD3600EA1765 /* Farol.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,10 +107,13 @@
 		83EC54AD1898DD3600EA1765 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8457E6631B017B0800DD7A4B /* CoreBluetooth.framework */,
+				8457E6611B017A4600DD7A4B /* CoreLocation.framework */,
 				83EC54AE1898DD3600EA1765 /* Foundation.framework */,
 				83EC54B01898DD3600EA1765 /* CoreGraphics.framework */,
 				83EC54B21898DD3600EA1765 /* UIKit.framework */,
 				83EC54CD1898DD3600EA1765 /* XCTest.framework */,
+				FB223622DC6005F3F2924DC9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,19 +121,14 @@
 		83EC54B41898DD3600EA1765 /* FaroliOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				84E1D80F1B3B9ED5002FBB0F /* Art */,
+				841C89AC1B01757F009FEE49 /* AppDelegate */,
+				841C89AB1B017568009FEE49 /* Classes */,
+				841C89AA1B017554009FEE49 /* Cells */,
+				841C89A91B017546009FEE49 /* ViewControllers */,
 				83EC54C61898DD3600EA1765 /* Images.xcassets */,
 				83EC54C01898DD3600EA1765 /* Main.storyboard */,
-				83EC54E61898E05E00EA1765 /* MVAddBeaconViewController.h */,
-				83EC54E71898E05E00EA1765 /* MVAddBeaconViewController.m */,
-				83EC54BD1898DD3600EA1765 /* MVAppDelegate.h */,
-				83EC54BE1898DD3600EA1765 /* MVAppDelegate.m */,
-				83EC54E91898E13900EA1765 /* MVBeacon.h */,
-				83EC54EA1898E13900EA1765 /* MVBeacon.m */,
-				83EC54C31898DD3600EA1765 /* MVBeaconsViewController.h */,
-				83EC54C41898DD3600EA1765 /* MVBeaconsViewController.m */,
 				83EC54B51898DD3600EA1765 /* Supporting Files */,
-				8391CE4C189A4D4F0072A2D3 /* MVBeaconCell.h */,
-				8391CE4D189A4D4F0072A2D3 /* MVBeaconCell.m */,
 			);
 			path = FaroliOSSample;
 			sourceTree = "<group>";
@@ -145,10 +136,8 @@
 		83EC54B51898DD3600EA1765 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2059A3C71AA8172800734F2A /* farol-120x120.png */,
-				20D437C81AA7EED50056CF81 /* farol-logo.png */,
 				83EC54B61898DD3600EA1765 /* FaroliOSSample-Info.plist */,
-				83EC54B71898DD3600EA1765 /* InfoPlist.strings */,
+				83EC54B71898DD3600EA1765 /* Localizable.strings */,
 				83EC54BA1898DD3600EA1765 /* main.m */,
 				83EC54BC1898DD3600EA1765 /* FaroliOSSample-Prefix.pch */,
 			);
@@ -173,6 +162,74 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		841C89A91B017546009FEE49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83EC54C31898DD3600EA1765 /* MVBeaconsViewController.h */,
+				83EC54C41898DD3600EA1765 /* MVBeaconsViewController.m */,
+				83EC54E61898E05E00EA1765 /* MVAddBeaconViewController.h */,
+				83EC54E71898E05E00EA1765 /* MVAddBeaconViewController.m */,
+				84B76FA11B42132300E5C279 /* MVAboutViewController.h */,
+				84B76FA21B42132400E5C279 /* MVAboutViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		841C89AA1B017554009FEE49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8391CE4C189A4D4F0072A2D3 /* MVBeaconCell.h */,
+				8391CE4D189A4D4F0072A2D3 /* MVBeaconCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		841C89AB1B017568009FEE49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83EC54E91898E13900EA1765 /* MVBeacon.h */,
+				83EC54EA1898E13900EA1765 /* MVBeacon.m */,
+				8457E65E1B01796A00DD7A4B /* MVLocationManager.h */,
+				8457E65F1B01796A00DD7A4B /* MVLocationManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		841C89AC1B01757F009FEE49 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				83EC54BD1898DD3600EA1765 /* MVAppDelegate.h */,
+				83EC54BE1898DD3600EA1765 /* MVAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84E1D80F1B3B9ED5002FBB0F /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				84E1D8101B3B9EDD002FBB0F /* Fonts */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
+		84E1D8101B3B9EDD002FBB0F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84E1D8111B3B9EF3002FBB0F /* Quicksand Book.otf */,
+				84E1D8121B3B9EF3002FBB0F /* Quicksand Light.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		CF453E6B73F5D4B2BB1496F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8419E6FA683B1604A1BB610F /* Pods.debug.xcconfig */,
+				ECF0FCC617CA4678267B3E61 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83EC54DD1898DD3600EA1765 /* Build configuration list for PBXNativeTarget "FaroliOSSample" */;
 			buildPhases = (
+				02420805B2D68344945E3EA3 /* Check Pods Manifest.lock */,
 				83EC54A71898DD3600EA1765 /* Sources */,
 				83EC54A81898DD3600EA1765 /* Frameworks */,
 				83EC54A91898DD3600EA1765 /* Resources */,
+				77FFAD1A0798E70049052401 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,26 +249,8 @@
 			);
 			name = FaroliOSSample;
 			productName = ForgetMeNot;
-			productReference = 83EC54AB1898DD3600EA1765 /* FaroliOSSample.app */;
+			productReference = 83EC54AB1898DD3600EA1765 /* Farol.app */;
 			productType = "com.apple.product-type.application";
-		};
-		83EC54CB1898DD3600EA1765 /* FaroliOSSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83EC54E01898DD3600EA1765 /* Build configuration list for PBXNativeTarget "FaroliOSSampleTests" */;
-			buildPhases = (
-				83EC54C81898DD3600EA1765 /* Sources */,
-				83EC54C91898DD3600EA1765 /* Frameworks */,
-				83EC54CA1898DD3600EA1765 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83EC54D21898DD3600EA1765 /* PBXTargetDependency */,
-			);
-			name = FaroliOSSampleTests;
-			productName = ForgetMeNotTests;
-			productReference = 83EC54CC1898DD3600EA1765 /* FaroliOSSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,9 +265,6 @@
 					83EC54AA1898DD3600EA1765 = {
 						DevelopmentTeam = FHNET43QA4;
 					};
-					83EC54CB1898DD3600EA1765 = {
-						TestTargetID = 83EC54AA1898DD3600EA1765;
-					};
 				};
 			};
 			buildConfigurationList = 83EC54A61898DD3600EA1765 /* Build configuration list for PBXProject "FaroliOSSample" */;
@@ -234,8 +272,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				pt,
+				en,
 			);
 			mainGroup = 83EC54A21898DD3600EA1765;
 			productRefGroup = 83EC54AC1898DD3600EA1765 /* Products */;
@@ -243,7 +282,6 @@
 			projectRoot = "";
 			targets = (
 				83EC54AA1898DD3600EA1765 /* FaroliOSSample */,
-				83EC54CB1898DD3600EA1765 /* FaroliOSSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,68 +292,81 @@
 			buildActionMask = 2147483647;
 			files = (
 				83EC54C71898DD3600EA1765 /* Images.xcassets in Resources */,
-				2059A3C81AA8172800734F2A /* farol-120x120.png in Resources */,
-				83EC54B91898DD3600EA1765 /* InfoPlist.strings in Resources */,
-				20D437C91AA7EED50056CF81 /* farol-logo.png in Resources */,
+				84E1D8131B3B9EF3002FBB0F /* Quicksand Book.otf in Resources */,
+				83EC54B91898DD3600EA1765 /* Localizable.strings in Resources */,
 				83EC54C21898DD3600EA1765 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83EC54CA1898DD3600EA1765 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83EC54D81898DD3600EA1765 /* InfoPlist.strings in Resources */,
+				84E1D8141B3B9EF3002FBB0F /* Quicksand Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02420805B2D68344945E3EA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77FFAD1A0798E70049052401 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83EC54A71898DD3600EA1765 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8457E6601B01796A00DD7A4B /* MVLocationManager.m in Sources */,
 				8391CE4E189A4D4F0072A2D3 /* MVBeaconCell.m in Sources */,
 				83EC54C51898DD3600EA1765 /* MVBeaconsViewController.m in Sources */,
 				83EC54E81898E05E00EA1765 /* MVAddBeaconViewController.m in Sources */,
 				83EC54EB1898E13900EA1765 /* MVBeacon.m in Sources */,
 				83EC54BF1898DD3600EA1765 /* MVAppDelegate.m in Sources */,
 				83EC54BB1898DD3600EA1765 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83EC54C81898DD3600EA1765 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83EC54DA1898DD3600EA1765 /* FaroliOSSample.m in Sources */,
+				84B76FA31B42132400E5C279 /* MVAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		83EC54D21898DD3600EA1765 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83EC54AA1898DD3600EA1765 /* FaroliOSSample */;
-			targetProxy = 83EC54D11898DD3600EA1765 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		83EC54B71898DD3600EA1765 /* InfoPlist.strings */ = {
+		83EC54B71898DD3600EA1765 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				83EC54B81898DD3600EA1765 /* en */,
+				84B76F871B40EF2D00E5C279 /* pt */,
+				84B76F9F1B40FCB300E5C279 /* en */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		83EC54C01898DD3600EA1765 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				83EC54C11898DD3600EA1765 /* Base */,
+				84B76F991B40FACE00E5C279 /* pt */,
+				84B76F9E1B40FC9C00E5C279 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -323,7 +374,7 @@
 		83EC54D61898DD3600EA1765 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				83EC54D71898DD3600EA1765 /* en */,
+				84B76F881B40EF2D00E5C279 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -347,7 +398,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Douglas Hermann (XNJS7ZD6T4)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -363,8 +414,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Farol Beacon";
+				PROVISIONING_PROFILE = "12460ed7-caa7-482a-8072-719eca16cf73";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -385,7 +438,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -395,7 +448,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "Farol Beacon";
+				PROVISIONING_PROFILE = "e7cd4532-9715-48b7-8768-f39bab468cb1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -403,69 +458,37 @@
 		};
 		83EC54DE1898DD3600EA1765 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8419E6FA683B1604A1BB610F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaroliOSSample/FaroliOSSample-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FaroliOSSample/FaroliOSSample-Info.plist";
-				PRODUCT_NAME = FaroliOSSample;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = Farol;
+				PROVISIONING_PROFILE = "12460ed7-caa7-482a-8072-719eca16cf73";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		83EC54DF1898DD3600EA1765 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF0FCC617CA4678267B3E61 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaroliOSSample/FaroliOSSample-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FaroliOSSample/FaroliOSSample-Info.plist";
-				PRODUCT_NAME = FaroliOSSample;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = Farol;
+				PROVISIONING_PROFILE = "e7cd4532-9715-48b7-8768-f39bab468cb1";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		83EC54E11898DD3600EA1765 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForgetMeNot.app/ForgetMeNot";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForgetMeNot/ForgetMeNot-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ForgetMeNotTests/FaroliOSSampleTests-Info.plist";
-				PRODUCT_NAME = FaroliOSSampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		83EC54E21898DD3600EA1765 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForgetMeNot.app/ForgetMeNot";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ForgetMeNot/ForgetMeNot-Prefix.pch";
-				INFOPLIST_FILE = "ForgetMeNotTests/FaroliOSSampleTests-Info.plist";
-				PRODUCT_NAME = FaroliOSSampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -486,15 +509,6 @@
 			buildConfigurations = (
 				83EC54DE1898DD3600EA1765 /* Debug */,
 				83EC54DF1898DD3600EA1765 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83EC54E01898DD3600EA1765 /* Build configuration list for PBXNativeTarget "FaroliOSSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83EC54E11898DD3600EA1765 /* Debug */,
-				83EC54E21898DD3600EA1765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

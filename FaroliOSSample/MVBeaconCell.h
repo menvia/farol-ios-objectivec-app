@@ -13,5 +13,9 @@
 @interface MVBeaconCell : UITableViewCell
 
 @property (strong, nonatomic) MVBeacon *item;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *proximityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accuracyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rssiLabel;
 
 @end

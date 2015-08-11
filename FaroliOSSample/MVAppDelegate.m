@@ -7,6 +7,7 @@
 //
 
 #import "MVAppDelegate.h"
+#import "MVLocationManager.h"
 
 @interface MVAppDelegate ()
 
@@ -16,9 +17,75 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self customizeAppearance];
+    [MVLocationManager sharedManager];
 
     return YES;
+}
+
+- (void)customizeAppearance {
+    
+    UIStatusBarStyle statusBarStyle = UIStatusBarStyleLightContent;
+    if (statusBarStyle) {
+        [[UIApplication sharedApplication]
+         setStatusBarStyle:statusBarStyle animated:NO];
+    }
+    
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    [navigationBarAppearance setBarTintColor:[self colorWithHexString:@"3f9ab7"]];
+
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:@"QuicksandBook-Regular" size:20.0f]
+                                                            }];
+    
+    UIBarButtonItem *barButtonAppearance = [UIBarButtonItem appearance];
+    [barButtonAppearance setTintColor:[UIColor whiteColor]];
+    [barButtonAppearance setTitleTextAttributes:@{
+                                                  NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                  NSFontAttributeName: [UIFont fontWithName:@"QuicksandLight-Regular" size:14.0f]
+                                                  } forState:UIControlStateNormal];
+    [barButtonAppearance setTitleTextAttributes:@{
+                                                  NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                  NSFontAttributeName: [UIFont fontWithName:@"QuicksandLight-Regular" size:14.0f]
+                                                  } forState:UIControlStateHighlighted];
+    
+}
+
+-(UIColor*)colorWithHexString:(NSString*)hex
+{
+    NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    
+    // String should be 6 or 8 characters
+    if ([cString length] < 6) return [UIColor grayColor];
+    
+    // strip 0X if it appears
+    if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
+    
+    if ([cString length] != 6) return  [UIColor grayColor];
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    NSString *rString = [cString substringWithRange:range];
+    
+    range.location = 2;
+    NSString *gString = [cString substringWithRange:range];
+    
+    range.location = 4;
+    NSString *bString = [cString substringWithRange:range];
+    
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    
+    return [UIColor colorWithRed:((float) r / 255.0f)
+                           green:((float) g / 255.0f)
+                            blue:((float) b / 255.0f)
+                           alpha:1.0f];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -51,3 +118,5 @@
 }
 
 @end
+
+
