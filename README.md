@@ -31,7 +31,7 @@ O projeto sempre deve ser carregado a partir do FaroliOSSample.xcworkspace, assi
 Você está pronto! Hora de começar a explorar.
 
 
-Bibliotecas de código aberto utilizdas
+Bibliotecas de código aberto utilizadas
 -------
 [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
 
