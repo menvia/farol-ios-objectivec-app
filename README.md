@@ -4,9 +4,11 @@ Farol iOS Objective-C App
 Introdução
 -------
 
-Este é um projeto de exemplo com código aberto, tem como objetivo de instruir desenvolvedores no uso do Farol. 
+Este é um projeto de exemplo com código aberto, tem como objetivo instruir desenvolvedores no uso do Farol. 
 
-Para ver obter mais informações e acompanhar nossos tutoriais e artigos, acesso [http://developer.menvia.com/](http://developer.menvia.com/)
+Para mais informações, tutoriais e artigos, acesse: [developer.menvia.com](http://developer.menvia.com/).
+
+Acompanhe as últimas novidades sobre a plataforma Farol em nosso [blog](http://blog.farol.me). 
 
 A App se encontra disponível para download na AppStore, através do link: [https://itunes.apple.com/br/app/farol-sample/id1015164918](https://itunes.apple.com/br/app/farol-sample/id1015164918)
 
@@ -34,4 +36,3 @@ Você está pronto! Hora de começar a explorar.
 Bibliotecas de código aberto utilizadas
 -------
 [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet)
-
